@@ -10,7 +10,7 @@ function Navigation() {
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container fluid>
-        <Navbar.Brand href="/home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand href="/">Club-Manager</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto pe-3">

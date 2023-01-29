@@ -1,10 +1,19 @@
 import React from 'react'
 import "./Home.css"
 import Carousel from 'react-bootstrap/Carousel'
+import {Button,Row,Col,Card,Form} from 'react-bootstrap';
 
 function Home() {
   return (
+
     <div>
+      
+     
+      <div className="current p-3 ">
+        <h1 > Annual Fest at VNRvjiet</h1>
+      </div>
+
+
         <Carousel className=''>
       <Carousel.Item interval={1000}>
         <img
@@ -13,11 +22,13 @@ function Home() {
           alt="First slide" width="100px" height="450px"
         />
         <Carousel.Caption>
-          <div className="first text-dark">
-            <h2>scintillashunzatvnrvjiet <br/> February 5,6 <br/> Grab your Passes</h2>
+          <div className="first ">
+            <h1>scintillashunzatvnrvjiet <br/> February 5 </h1>
           </div>
+          <button className='reg bg-white'>Register </button>
         </Carousel.Caption>
       </Carousel.Item>
+     
       <Carousel.Item interval={500}>
         <img
           className="d-block w-100"
@@ -26,8 +37,9 @@ function Home() {
         />
         <Carousel.Caption>
         <div className="first text-white">
-            <h4>If you are in safe location? <br/> Please do respond for popup?</h4>
-          </div>
+            <h1>VJ Hackathon  <br/> February 6,7 </h1>
+        </div>
+        <button className='reg bg-white'>Register </button>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -37,9 +49,10 @@ function Home() {
           alt="Third slide" width="100px" height="450px"
         />
         <Carousel.Caption>
-        <div className="first text-dark ">
-            <h4>If not ? <br/> We will share your location to your Emergency contacts </h4>
-          </div>
+        <div className="first ">
+            <h1>Coding Contest <br/>February 4 </h1>
+        </div>
+        <button className='reg bg-white'>Register </button>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
