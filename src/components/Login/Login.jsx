@@ -5,8 +5,9 @@ import {Row,Col} from 'react-bootstrap'
 export default function Login() {
   return (
     <div>
-      <Row>
-
+      <Row xs={1} md={2}>
+        <Col>Home</Col>
+        <Col>Peeku</Col>
       </Row>
       {/* <ul className="nav justify-content-center">
         <li className="nav-item">
