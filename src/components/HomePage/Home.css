@@ -1,7 +1,7 @@
 img {
     opacity: 1.0;
 }
-event{
+.event{
     height: 60px;
     width: 160px;
     background-color: white;
@@ -16,3 +16,26 @@ event{
    height: 100px;
    width: 100%;
 }
+.search{
+    width:100%;   
+    border-width: thick;
+    display: block;
+    
+}
+  .home{
+      display: inline;
+}
+  #girl{
+    width: 300px;
+    border-radius: 30px;
+    display: inline;
+    margin-left: 10%;
+  
+}
+  .contain {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+  }

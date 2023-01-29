@@ -7,17 +7,12 @@ function Acm(){
             
             <div className='container m-2'>
             <ul className="nav">
-                <li class="nav-item">
-                    <a class="" href='#'>
-                    <div>
-        <img src={acm} alt="" width="100px"/>
-      </div>
-                    </a>
-                    </li>
-                    <li>
+            
+                <li  class="nav-item">
+                    <img src={acm} alt="" width="100px"/>
                     <h1 className='heads display-5 text-warning fw-semibold'>ASSOCIATION FOR COMPUTING MACHINERY STUDENT CHAPTER</h1>
-                    </li>
-</ul>
+                </li>
+           </ul>
 
 </div>
            <div className='container'>

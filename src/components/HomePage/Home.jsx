@@ -6,9 +6,7 @@ const EventList = require('./EventList');
 
 function Home() {
 
-
-  
-  const [query,setQuery]= useState("")
+  //const [query,setQuery]= useState("")
   // console.log(EventList.filter(event=>event.name.toLowerCase().includes("ha")))
 
   return (
@@ -64,24 +62,20 @@ function Home() {
       </Carousel.Item>
     </Carousel>
 
-    <div className='contain  mb-5'>      
-      <h2 className='m-4 mt-5 mb-2 '>Search the Event <br/> to Register 
-        
-          <input type="text" placeholder='Search' className='search mt-4' onChange={(e)=>setQuery(e.target.value)} />
-
-          </h2> 
-          {/* <ul className='list mt-3'> <h3 className='eve mt-3'> Events </h3>
-             {EventList.filter(event=>event.name.toLowerCase().includes(query)).map((event)=>(
-              <li key={event.id} className='listevent '>{event.name}</li>
-             ))}
-
-          </ul> */}
-
-
-
+    <div className='contain  '>      
+      <h3 className='m-4 mt-5 mb-2 '>Choose the Technology <br/> to Learn 
+      <Form className='search p-2  '>  
+       
+                  <Form.Control                   
+                    className=' me-0 '
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                </Form> 
+          </h3> 
       <img id='girl' src="https://img.freepik.com/free-vector/group-college-university-students-hanging-out_74855-5251.jpg  " alt="" />      
     </div>
-    
     </div>
   )
 }
