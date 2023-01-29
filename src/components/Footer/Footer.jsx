@@ -2,9 +2,9 @@ import React from 'react'
 import './Footer.css'
 export default function Footer() {
   return (
-
+    <div className='pt-2 '>
     <div className='bg-dark'id="footBody" >
-      <h3 className='text-center text-white'>Club </h3>
+      <h3 className='text-center text-white'><a href='/' className='text-white text-decoration-none '> Club Manager </a></h3>
       <hr/>
       <div className='d-flex justify-content-around'>
         <ul id="links" >
@@ -33,6 +33,6 @@ export default function Footer() {
         <p>Students of <a href='http://www.vnrvjiet.ac.in/' className='text-white ' target="_blank">Vnrvjiet</a></p>
         
       </div>
-      </div>
+      </div></div>
   )
 }

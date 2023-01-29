@@ -2,13 +2,14 @@ import './App.css';
 import RootLayout from './components/RootLayout'
 import Clubs from './components/Clubs/Clubs'
 import Home from './components/HomePage/Home'
-import Login from './components/Login/Login'
 import Events from './components/Events/Events'
+import Register from './components/Register/Register'
 import StudentLogin from './components/Login/StudentLogin/StudentLogin'
 import ClubLogin from './components/Login/ClubLogin/ClubLogin'
-import PreviousEvents from './components/PreviousEvents/PreviousEvents'
-import UpcomingEvents from './components/UpcomingEvents/UpcomingEvents'
-import Register from './components/Register/Register'
+import PreviousEvents from './components/Events/PreviousEvents/PreviousEvents'
+import UpcomingEvents from './components/Events/UpcomingEvents/UpcomingEvents'
+import StudentRegister from './components/Register/StudentRegister/StudentRegister'
+import ClubRegister from './components/Register/ClubRegister/ClubRegister'
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 function App() {
@@ -40,23 +41,25 @@ function App() {
           ]
         },
         {
-          path:"/login",
-          element:<Login/>,
-          children:[
-            {
-              path:'studentlogin',
-              element:<StudentLogin/>
-            },
-            {
-              path:'clublogin',
-              element:<ClubLogin/>
-            }
-          ]
+          path:'/studentlogin',
+          element:<StudentLogin/>
+        },
+        {
+          path:'/clublogin',
+          element:<ClubLogin/>
         },
         {
           path:"/register",
           element:<Register/>
-        }      
+        },    
+        {
+          path:'studentregister',
+          element:<StudentRegister/>
+        },
+        {
+          path:'clubregister',
+          element:<ClubRegister/>
+        }
       ]
     }
   ])
