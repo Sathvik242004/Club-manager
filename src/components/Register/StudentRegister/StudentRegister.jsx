@@ -10,10 +10,10 @@ function Form() {
    
 
   return (
-    <div id="dim">
+    <div className='container w-50' id="dim">
     <div className=" reg container mt-5 ">
       <style> @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,500;1,400&family=Berkshire+Swash&family=Carter+One&family=DM+Serif+Text:ital@1&family=Khand&family=Oleo+Script&family=Permanent+Marker&family=Righteous&display=swap'); </style>
-        <h2 className='text-center mx-auto'>Form</h2>
+        <h2 className='text-center mx-auto'>Student Sign up</h2>
         <form onSubmit={handleSubmit(submitForm)}>
           <div className="row row-cols-1 row-cols-lg-2">
             <div className="col mx-auto">            
@@ -63,8 +63,9 @@ function Form() {
           <div className="row row-cols-1 ">
         
           </div>
-          
-          <button type='submit' className="btn mr-0 mt-3">Submit</button>
+          <div className='text-center'>
+          <button type='submit' className="btn mr-0 mt-3 btn-info ">Submit</button>
+          </div>
          
 
            

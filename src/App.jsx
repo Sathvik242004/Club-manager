@@ -53,11 +53,11 @@ function App() {
           element:<Register/>
         },    
         {
-          path:'studentregister',
+          path:'/studentregister',
           element:<StudentRegister/>
         },
         {
-          path:'clubregister',
+          path:'/clubregister',
           element:<ClubRegister/>
         }
       ]

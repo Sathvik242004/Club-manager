@@ -12,19 +12,19 @@ export default function Register() {
           <h1 className='heads'>For <span className='text-success'>Clubs</span></h1>
           <h4 className='mb-5'>login to create new events...</h4>
           <button className='btn1'>
-            <Link className='nav-link' to='/studentlogin'>Login</Link>
+            <Link className='nav-link' to='/clublogin'>Login</Link>
           </button>
           <h4>Don't have an account?</h4>
-          <h3><Link className="nav-link" to='/studentregister'>Sign Up</Link></h3>
+          <h3><Link className="nav-link text-primary" to='/clubregister'>Sign Up</Link></h3>
         </Col>
         <Col className='columns'>
           <h1 className='heads'>For <span className='text-primary'>Students</span></h1>
           <h4 className='mb-5'>login for news updates...</h4>
           <button className='btn2'>
-            <Link className="nav-link" to='/clublogin'>Login</Link>
+            <Link className="nav-link" to='/studentlogin'>Login</Link>
           </button>
           <h4>Don't have an account?</h4>
-          <h3><Link className="nav-link text-success" to='/clubregister'>Sign Up</Link></h3>
+          <h3><Link className="nav-link text-success" to='/studentregister'>Sign Up</Link></h3>
         </Col>
       </Row>
       <Outlet/>

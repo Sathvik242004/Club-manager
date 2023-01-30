@@ -1,10 +1,13 @@
 import React from 'react'
 import './Footer.css'
+import {HiUserGroup} from 'react-icons/hi'
+
+
 export default function Footer() {
   return (
     <div className='pt-2 '>
     <div className='bg-dark'id="footBody" >
-      <h3 className='text-center text-white'><a href='/' className='text-white text-decoration-none '> Club Manager </a></h3>
+      <h3 className='text-center text-white'><a href='/' className='text-white text-decoration-none '><span className=''><HiUserGroup className='pb-2' size={35}/></span> Club Manager </a></h3>
       <hr/>
       <div className='d-flex justify-content-around'>
         <ul id="links" >
